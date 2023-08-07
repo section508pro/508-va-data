@@ -1,4 +1,4 @@
-name: CI
+name: Mobile
 on:
   push:
     branches: [ "main" ]
@@ -6,7 +6,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:  
   schedule:
-    - cron: '00 10 * * *'  # At 17:00 every day.  
+    - cron: '00 08 * * *'  # At 08:00 UTC every day. (2am Denver time) 
   
 jobs:
   build:
@@ -18,12 +18,13 @@ jobs:
         run: |
           npm install -g @unlighthouse/cli puppeteer
           npm install
-          npm test
+          npm run testm
+          npm run summary
 
       - name: Commit results
         run: |
           git config --global user.name scott-skyward
           git config --global user.email sdavis@skywarditsolutions.com
           git add .
-          git commit -m "Lighthouse audit data"
+          git commit -m "Mobile Lighthouse audit data"
           git push

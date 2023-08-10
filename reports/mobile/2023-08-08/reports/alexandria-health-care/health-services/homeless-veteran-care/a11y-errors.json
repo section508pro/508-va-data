@@ -1,0 +1,72 @@
+[
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "9-254-H3",
+            "path": "6,HTML,3,BODY,17,DIV,0,MAIN,0,DIV,2,DIV,0,ARTICLE,2,DIV,0,DIV,0,DIV,0,H3",
+            "selector": "div.feature > div.processed-content > div > h3#housing-resources-for-homeless",
+            "boundingRect": {
+              "top": 514,
+              "bottom": 566,
+              "left": 24,
+              "right": 388,
+              "width": 364,
+              "height": 52
+            },
+            "snippet": "<h3 id=\"housing-resources-for-homeless\">",
+            "nodeLabel": "Housing Resources for Homeless Veterans",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        },
+        {
+          "node": {
+            "type": "node",
+            "lhId": "9-255-H6",
+            "path": "6,HTML,3,BODY,17,DIV,0,MAIN,0,DIV,2,DIV,0,ARTICLE,2,DIV,0,DIV,0,DIV,144,H6",
+            "selector": "div.feature > div.processed-content > div > h6",
+            "boundingRect": {
+              "top": 6072,
+              "bottom": 6094,
+              "left": 24,
+              "right": 388,
+              "width": 364,
+              "height": 23
+            },
+            "snippet": "<h6>",
+            "nodeLabel": "Vinton",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 2
+  }
+]

@@ -1,20 +1,17 @@
-name: Mobile
+name: Summary
 on:
-  workflow_dispatch:  
-  schedule:
-    - cron: '00 08 * * *'  # At 08:00 UTC every day. (2am Denver time) 
-  
+    push:
+        branches: [ "main" ]
+      
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run Lighthouse
+      - name: Summarize Lighthouse audit data
         run: |
-          npm install -g @unlighthouse/cli puppeteer
           npm install
-          npm run testm
           npm run summary
 
       - name: Commit results
@@ -22,5 +19,5 @@ jobs:
           git config --global user.name scott-skyward
           git config --global user.email sdavis@skywarditsolutions.com
           git add .
-          git commit -m "Mobile Lighthouse audit data"
+          git commit -m "Updated summaries for Lighthouse audit data"
           git push

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "9-196-H3",
+            "path": "6,HTML,3,BODY,18,DIV,0,MAIN,0,DIV,2,DIV,0,ARTICLE,3,DIV,0,VA-ALERT,0,H3",
+            "selector": "article.usa-content > div.cta-widget > va-alert.hydrated > h3",
+            "boundingRect": {
+              "top": 1204,
+              "bottom": 1230,
+              "left": 69,
+              "right": 384,
+              "width": 315,
+              "height": 26
+            },
+            "snippet": "<h3 slot=\"headline\">",
+            "nodeLabel": "Sign in to refill prescriptions",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]

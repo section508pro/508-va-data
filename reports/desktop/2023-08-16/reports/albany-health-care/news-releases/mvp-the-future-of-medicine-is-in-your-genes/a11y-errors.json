@@ -1,0 +1,53 @@
+[
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "9-173-H3",
+            "path": "6,HTML,3,BODY,17,DIV,0,MAIN,0,DIV,2,DIV,0,ARTICLE,0,SECTION,5,DIV,0,H3",
+            "selector": "article.usa-content > section.vads-u-margin-bottom--5 > div > h3#fifteen-minutes-and-a-blood-dr",
+            "boundingRect": {
+              "top": 627,
+              "bottom": 679,
+              "left": 175,
+              "right": 875,
+              "width": 700,
+              "height": 52
+            },
+            "snippet": "<h3 id=\"fifteen-minutes-and-a-blood-dr\">",
+            "nodeLabel": "Fifteen minutes and a blood draw are all it takes to make a lasting difference.",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "heading-order",
+    "title": "Heading elements are not in a sequentially-descending order",
+    "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more](https://web.dev/heading-order/).",
+    "score": 0,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "itemType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "itemType": "node"
+          },
+          "text": "Failing Elements"
+        }
+      ],
+      "items": [
+        {
+          "node": {
+            "type": "node",
+            "lhId": "9-201-H4",
+            "path": "6,HTML,3,BODY,17,DIV,0,MAIN,0,DIV,2,DIV,0,ARTICLE,3,DIV,0,DIV,3,BLOCKQUOTE,1,H4",
+            "selector": "div.processed-content > div > blockquote > h4",
+            "boundingRect": {
+              "top": 1311,
+              "bottom": 1533,
+              "left": 48,
+              "right": 364,
+              "width": 316,
+              "height": 222
+            },
+            "snippet": "<h4>",
+            "nodeLabel": " VA for Vets VA Careers FEDS Hire VETS",
+            "explanation": "Fix any of the following:\n  Heading order invalid"
+          }
+        }
+      ],
+      "debugData": {
+        "type": "debugdata",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ]
+      }
+    },
+    "errorCount": 1
+  }
+]
